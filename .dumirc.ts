@@ -21,7 +21,7 @@ export default defineConfig({
         },
         {
           title: 'GitHub',
-          link: 'https://github.com/VOIDCUI/void-tools',
+          link: 'https://github.com/VOIDCUI/void-libs',
         },
       ],
     },

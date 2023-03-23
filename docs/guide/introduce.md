@@ -45,7 +45,7 @@ void-lib 支持`cjs`、`ejs`、`umd` 三种模块，定制化你的 Web 运行�
 
 #### 拉取仓库
 
-- 原始仓库： <a href="https://github.com/VOIDCUI/void-tools">https://github.com/VOIDCUI/void-tools</a>
+- 原始仓库： <a href="https://github.com/VOIDCUI/void-libs">https://github.com/VOIDCUI/void-libs</a>
 
 - 目标仓库：fork 到自己的 github 上
 
