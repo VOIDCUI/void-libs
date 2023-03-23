@@ -8,7 +8,7 @@ export default defineConfig({
     hd: true,
     rtl: true,
     footer:
-      'Copyright © 2022-2022 void-lib. All Rights Reserved. void-lib 版权所有. 苏ICP备2022018060号',
+      'Copyright © 2022-2022 void-lib. All Rights Reserved. void-lib 版权所有.',
     nav: {
       'zh-CN': [
         {
