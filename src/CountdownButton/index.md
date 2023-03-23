@@ -1,7 +1,10 @@
 ---
 title: CountdownButton 倒计时按钮
 nav:
-  title: 组件
+  title: 移动端
+  path: /mobile
+group:
+  title: 移动端
 ---
 
 # CountdownButton 倒计时按钮
@@ -10,45 +13,16 @@ nav:
 
 ## 基础使用
 
-```jsx
-import React, { useState } from 'react';
-import { CountdownButton } from 'void-libs';
+<code src="./demos/index.tsx"></code>
 
-function CountdownButtonDemo() {
-  const [loading, setLoading] = useState < boolean > false;
+## 参数
 
-  const getCode = async () => {
-    setLoading(true);
-    try {
-      return await new Promise((resolve) =>
-        setTimeout(() => {
-          resolve(123);
-        }, 1000),
-      );
-    } catch (err) {
-      throw new Error('failed');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <CountdownButton
-      loading={loading}
-      onClick={async (completeCallback) => {
-        const code = await getCode();
-        console.log(`验证码：${code}`);
-        completeCallback();
-      }}
-    >
-      获取验证码
-    </CountdownButton>
-  );
-}
-
-export default CountdownButtonDemo;
-```
-
-<API id="CountdownButtonDemo"></API>
+| 参数         | 说明                                                                                                 | 类型                                    | 默认值                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------- |
+| maxSecondNum | 最大秒数                                                                                             | number                                  | 60                                            |
+| txt          | 按钮默认文本                                                                                         | string                                  | 获取验证码                                    |
+| loadingTxt   | 加载时按钮文本                                                                                       | string                                  | 发送中                                        |
+| disabledTxt  | 禁用时按钮文本                                                                                       | (s: number) => string;                  | (s) => `${s} 秒后重试`                        |
+| onClick      | 点击按钮时触发的函数，其参数 completeCallback 需要在接口请求完毕后调用，用于告知组件接口请求已完成。 | (completeCallback: () => void) => void; | (completeCallback) => { completeCallback(); } |
 
 除以上 API 外，倒计时按钮还支持 Button 组件（Ant Design）的所有 API 。

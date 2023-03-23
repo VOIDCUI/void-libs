@@ -1,7 +1,10 @@
 ---
 title: RankList 排行榜
 nav:
-  title: 组件
+  title: 移动端
+  path: /mobile
+group:
+  title: 移动端
 ---
 
 # RankList 排行榜
@@ -10,22 +13,11 @@ nav:
 
 ## 基础使用
 
-```jsx
-import { RankList } from 'void-libs';
-import React from 'react';
+<code src="./demos/index.tsx"></code>
 
-function RankListDemo() {
-  const data = Array.from(new Array(10)).map((_, idx) => ({
-    label: `选项${idx + 1}`,
-    value: 10 - idx,
-  }));
+## 参数
 
-  return (
-    <div>
-      <RankList data={data}></RankList>
-    </div>
-  );
-}
-
-export default RankListDemo;
-```
+| 参数  | 说明 | 类型   | 默认值 |
+| ----- | ---- | ------ | ------ | --- |
+| label | 文本 | string | -      |
+| value | 分数 | string | number | -   |
