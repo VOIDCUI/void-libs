@@ -9,6 +9,8 @@
 import React from 'react';
 import './index.less';
 
+// test
+
 interface RankListProps {
   data: { label: string; value: string | number }[];
 }
