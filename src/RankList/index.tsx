@@ -1,15 +1,13 @@
 /*
  * @Author       : cuiguiming
  * @Date         : 2023-03-21 18:25:03
- * @LastEditors  : error: git config user.name & please set dead value or install git
- * @LastEditTime : 2023-03-21 18:25:03
+ * @LastEditors  : VOIDCUI
+ * @LastEditTime : 2023-03-30 11:41:36
  * @Description  : Description
  */
 
 import React from 'react';
 import './index.less';
-
-// test
 
 interface RankListProps {
   data: { label: string; value: string | number }[];
