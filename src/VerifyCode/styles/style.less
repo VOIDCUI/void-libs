@@ -1,13 +1,18 @@
 /*
 * 拼图
 */
-.jigsaw {
-  position: absolute;
-  top: 0;
-  cursor: grab;
+.jigsaw-wrap {
+  // 阻止移动端默认滑动手势行为
+  touch-action: none;
 
-  &:active {
-    cursor: grabbing;
+  .jigsaw {
+    position: absolute;
+    top: 0;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
   }
 }
 
