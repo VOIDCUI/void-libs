@@ -2,6 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
+  title: 'void-components使用文档',
   themeConfig: {
     name: 'CUI',
     carrier: 'dumi', // 设备状态栏左侧的文本内容
